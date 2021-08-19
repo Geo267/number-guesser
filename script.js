@@ -11,7 +11,7 @@ const generateTarget = () => {
 
 const compareGuesses = (currentHumanGuess, computerGuess, generateTarget) => {
     if (currentHumanGuess <0 || currentHumanGuess >9) {
-      document.write('Number out of range');
+      alert('Number out of range');
     }else {
     let humanDiff = Math.abs(currentHumanGuess - generateTarget);
     let computerDiff = Math.abs(computerGuess - generateTarget);
